@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Homework</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:chartreuse;
+        }
+    </style>
+    <script>
+        var userMemory = prompt("Enter count of memory on your device (Gb): ", "1")
+        if(userMemory < 0){
+            alert("Definition by zero! Try again.")
+        }
+        else{
+            var fileCount = (parseInt(userMemory) * 1000) / 820
+            alert(parseFloat(Math.round(fileCount)).toString() + " files can be on your device.")
+        }
+    </script>
+</body>
+</html>

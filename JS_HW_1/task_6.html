@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Homework</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:cadetblue;
+        }
+    </style>
+    <script>
+        var count = prompt("Enter your money: ", "1")
+        if(count < 0){
+            alert("Definition by zero! Try again.")
+        }
+        else{
+            var sw = prompt("Enter your convert option:\n" + "1. USD to EUR.\n" + "2. EUR to USD.")
+            switch (parseInt(sw)) {
+                case 1:
+                    alert(parseInt(count).toString() + " USD in EUR is: " + Math.round((parseInt(count) * 0.86)).toString())
+                    break
+                case 2:
+                    alert(parseInt(count).toString() + " EUR in USD is: " + Math.round((parseInt(count) * 1.17)).toString())
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

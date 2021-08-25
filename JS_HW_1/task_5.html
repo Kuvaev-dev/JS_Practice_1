@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Homework</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:burlywood;
+        }
+    </style>
+    <script>
+        var S = prompt("Enter your distance (km): ", "1")
+        var t = prompt("Enter your time (hour): ", "1")
+        if(S < 0 || t < 0){
+            alert("Definition by zero! Try again.")
+        }
+        else{
+            alert("V = " + (parseFloat(S)/parseFloat(t)).toString() + " km/h")
+        }
+    </script>
+</body>
+</html>

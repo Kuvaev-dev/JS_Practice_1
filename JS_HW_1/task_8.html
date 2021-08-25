@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Homework</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:chocolate;
+        }
+    </style>
+    <script>
+        var userMoney = prompt("Enter your money: ", "1")
+        var chocoCost = prompt("Enter cost of 1 chocolate: ", "100")
+        if(userMoney < 0 || chocoCost < 0){
+            alert("Definition by zero! Try again.")
+        }
+        else{
+            var count = userMoney / chocoCost 
+            alert("You can buy " + Math.round(count).toString() + " plates of chocolate.")
+            var plus = userMoney - (count * chocoCost)
+            alert("Your change is: " + Math.round(plus).toString())
+        }
+    </script>
+</body>
+</html>
