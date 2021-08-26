@@ -14,6 +14,8 @@
     </style>
     <script>
         var count = prompt("Enter your money: ", "1")
+        const oneUSD = 0.86
+        const oneEUR = 1.17
         if(count < 0){
             alert("Definition by zero! Try again.")
         }
@@ -21,10 +23,10 @@
             var sw = prompt("Enter your convert option:\n" + "1. USD to EUR.\n" + "2. EUR to USD.")
             switch (parseInt(sw)) {
                 case 1:
-                    alert(parseInt(count).toString() + " USD in EUR is: " + Math.round((parseInt(count) * 0.86)).toString())
+                    alert(parseInt(count).toString() + " USD in EUR is: " + Math.round((parseInt(count) * parseFloat(oneUSD))).toString())
                     break
                 case 2:
-                    alert(parseInt(count).toString() + " EUR in USD is: " + Math.round((parseInt(count) * 1.17)).toString())
+                    alert(parseInt(count).toString() + " EUR in USD is: " + Math.round((parseInt(count) * parseFloat(oneEUR))).toString())
                     break
             }
         }
