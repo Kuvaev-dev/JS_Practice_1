@@ -18,8 +18,21 @@
             alert("Definition by zero! Try again.")
         } 
         else{
+            // Способ 1. Тернарный оператор.
             var msg = parseInt(x)%2==0 ? "Четное число" : "Нечетное число"
             alert(msg)
+            
+            // Способ 2. Через лямбду.
+            // const even = n => !(n % 2);
+            // alert(even(5));
+            // alert(even(4));
+            
+            // Способ 3. Через функцию.
+            // function even_or_odd(number) {
+               // return number % 2 === 0 ? "Odd" : "Even"
+            // }
+            // alert(even_or_odd(5));
+            // alert(even_or_odd(4));
         }
     </script>
 </body>
