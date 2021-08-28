@@ -13,14 +13,13 @@
         }
     </style>
     <script>
-        var userMoney = prompt("Enter your money: ", "1")
-        var chocoCost = prompt("Enter cost of 1 chocolate: ", "100")
-        if(userMoney < 0 || chocoCost < 0){
-            alert("Definition by zero! Try again.")
-        }
-        else{
-            alert("You can buy " + eval(parseInt(userMoney) / parseInt(chocoCost)) + " plates of chocolate. Your change is: " + eval(parseInt(userMoney) - (parseFloat(count) * parseInt(chocoCost)))
-        }
+        var userMoney = 1;
+        var chocoCost = 1;
+
+        money = parseFloat(prompt("Enter your money: ").replaceAll(',', '.'));
+        cost = parseFloat(prompt("Enter cost of 1 chocolate: ").replaceAll(',', '.'));
+
+        alert("You can buy " + parseInt(eval(userMoney / chocoCost)) + " plates. Change is - " + parseFloat(userMoney - parseInt(userMoney / chocoCost) * chocoCost));
     </script>
 </body>
 </html>
