@@ -20,7 +20,7 @@
         }
         else{
             alert("You can buy " + Math.round(eval(userMoney / chocoCost)).toString() + " plates of chocolate.")
-            alert("Your change is: " + Math.round(userMoney - (count * chocoCost)).toString())
+            alert("Your change is: " + Math.round(eval(userMoney - (count * chocoCost))).toString())
         }
     </script>
 </body>
