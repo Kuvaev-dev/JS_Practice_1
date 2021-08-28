@@ -19,10 +19,8 @@
             alert("Definition by zero! Try again.")
         }
         else{
-            var count = userMoney / chocoCost 
-            alert("You can buy " + Math.round(count).toString() + " plates of chocolate.")
-            var plus = userMoney - (count * chocoCost)
-            alert("Your change is: " + Math.round(plus).toString())
+            alert("You can buy " + Math.round(eval(userMoney / chocoCost)).toString() + " plates of chocolate.")
+            alert("Your change is: " + Math.round(userMoney - (count * chocoCost)).toString())
         }
     </script>
 </body>
